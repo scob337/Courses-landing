@@ -1,10 +1,22 @@
+body{
+    overflow-x: hidden;
+}
 li.active a{
    
-    color: purple;
+    color: #5F6F52;
 }
 @media (max-width:1023px){
     li.active a{
         color: white;
-        background-color: purple;
+        background-color: #5F6F52;
     }
+}
+input[type="checkbox"]{
+    accent-color: #3B82F6;
+    pointer-events: none;
+    padding: 5px;
+    border-radius:50%
+}
+[data-aos] {
+    transition: all .5s ease-in-out !important;
 }
