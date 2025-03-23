@@ -471,7 +471,9 @@
 
 <!-- Contact  Form Start-->
 
-<section class="bg-[#5F6F52] text-white rounded-lg container" id="contact" dir="rtl">
+<section
+data-aos="fade-up"
+class="bg-[#5F6F52] text-white rounded-lg container" id="contact" dir="rtl">
     <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div class="mb-4">
             <div class="mb-6 max-w-3xl text-center md:mx-auto md:mb-12">
@@ -499,8 +501,7 @@
                             </div>
                             <div class="mr-4 mb-4">
                                 <h3 class="mb-2 text-lg font-medium leading-6 text-white">عنواننا</h3>
-                                <p class="text-gray-200">شارع 123، المنطقة التجارية</p>
-                                <p class="text-gray-200">القاهرة، مصر</p>
+                                <p class="text-gray-200"> اربد/ الحي الجنوبي  </p>
                             </div>
                         </li>
                         <li class="flex">
@@ -509,11 +510,11 @@
                             </div>
                             <div class="mr-4 mb-4">
                                 <h3 class="mb-2 text-lg font-medium leading-6 text-white">اتصل بنا</h3>
-                                <p class="text-gray-200">الهاتف: +20 123 456 7890</p>
-                                <p class="text-gray-200">البريد: contact@example.com</p>
+                                <p class="text-gray-200">الهاتف: 00962780092288   </p>
+                                <p class="text-gray-200">البريد: smartsummitcompany@gmail.com</p>
                             </div>
                         </li>
-                        <li class="flex">
+                        <!-- <li class="flex">
                             <div class="flex h-10 w-10 items-center justify-center rounded bg-white text-[#5F6F52]">
                                 <i class="fas fa-clock text-lg"></i>
                             </div>
@@ -522,12 +523,12 @@
                                 <p class="text-gray-200">الإثنين - الجمعة: 08:00 - 17:00</p>
                                 <p class="text-gray-200">السبت والأحد: 08:00 - 12:00</p>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
                     <h2 class="mb-4 text-2xl font-bold text-white">هل أنت مستعد للتواصل؟</h2>
-                    <form action="https://fabform.io/f/xxxxx" method="post">
+                    <form id="ContactForm">
                         <div class="mb-6">
                             <div class="mx-0 mb-1 sm:mb-4">
                                 <div class="mx-0 mb-1 sm:mb-4">
@@ -544,8 +545,8 @@
                                 </div>
                             </div>
                             <div class="mx-0 mb-1 sm:mb-4">
-                                <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label>
-                                <textarea id="textarea" name="textarea" cols="30" rows="5"
+                                <label for="message" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                <textarea id="message" name="textarea" cols="30" rows="5"
                                     placeholder="اكتب رسالتك هنا..."
                                     class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md bg-gray-200 text-gray-900 sm:mb-0"></textarea>
                             </div>
@@ -581,6 +582,28 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>    
+
+
+        const Form = document.getElementById('ContactForm')
+        const name = document.getElementById('name')
+        const email = document.getElementById('email')
+        const message = document.getElementById('message')
+
+        Form.onsubmit = (e) => {
+            e.preventDefault()
+            const data = {
+                name: name.value,
+                email: email.value,
+                message: message.value
+            }
+            const whatsappNumber = "00962780092288"; // رقم الواتساب
+            const whatsappLink = `https://wa.me/${whatsappNumber}?text=الاسم:%20${encodeURIComponent(data.name)}%0Aالبريد%20الإلكتروني:%20${encodeURIComponent(data.email)}%0Aالرسالة:%20${encodeURIComponent(data.message)}`;
+
+            // فتح الرابط في نافذة جديدة
+            window.open(whatsappLink, "_blank");
+        }
+
+
 
         const NavLink = document.querySelectorAll('nav ul li')
         NavLink.forEach((el,ID )=>{
