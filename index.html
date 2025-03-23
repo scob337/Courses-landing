@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
         <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
-<body class="bg-[#F9FAFB] text-gray-800" >
+<body class="bg-[#F5F5F5] text-gray-800" >
 
     <div class="container w-[90%] mx-auto">
             <!-- NavBar  Start--> 
@@ -28,32 +31,59 @@
             <div class="items-center justify-between w-full max-md:flex-row-reverse lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                 <ul class="flex flex-col-reverse mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 lg:justify-center text-right">
                     <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:text-white hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 p-3">تواصل معي</a>
+                        <a href="#contact"
+                            class="block py-2 pl-3 pr-4 text-gray-700
+                             border-b border-gray-100 hover:text-white 
+                             hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52]
+                              lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white 
+                              lg:dark:hover:bg-transparent dark:border-gray-700 p-3">تواصل معي</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials"
+                            class="block py-2 pl-3 pr-4 text-gray-700 
+                            border-b border-gray-100 hover:text-white 
+                            hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] 
+                            lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white
+                             lg:dark:hover:bg-transparent dark:border-gray-700 p-3">الاراء</a>
+                    </li>
+                    <li>
+                        <a href="#payment"
+                            class="block py-2 pl-3 pr-4 text-gray-700
+                             border-b border-gray-100 hover:text-white 
+                             hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] 
+                             lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white 
+                             lg:dark:hover:bg-transparent dark:border-gray-700 p-3">طرق الدفع</a>
+                    </li>
+                    <li>
+                        <a href="#gift"
+                            class="block py-2 pl-3 pr-4 text-gray-700
+                             border-b border-gray-100 hover:text-white 
+                             hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52]
+                              lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white 
+                              lg:dark:hover:bg-transparent dark:border-gray-700 p-3">الهدايا</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 pl-3 pr-4 text-gray-700
+                             border-b border-gray-100 hover:text-white 
+                             hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52]
+                              lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white 
+                              lg:dark:hover:bg-transparent dark:border-gray-700 p-3">تفاصيل الدورة</a>
+                    </li>
+                    <li>
+                        <a href="#chapter"
+                            class="block py-2 pl-3 pr-4 text-gray-700
+                             border-b border-gray-100 hover:text-white 
+                             hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] 
+                             lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white 
+                             lg:dark:hover:bg-transparent dark:border-gray-700 p-3">نبذة عن محتوي الدورة</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:text-white hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 p-3">الاراء</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:text-white hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 p-3">طرق الدفع</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:text-white hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 p-3">الهدايا</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:text-white hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 p-3">تفاصيل الدورة</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:text-white hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 p-3">نبذة عن محتوي الدورة</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:text-white hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 p-3">الرئيسية</a>
+                            class="block py-2 pl-3 pr-4 text-gray-700
+                             border-b border-gray-100 hover:text-white
+                              hover:bg-[#5F6F52] lg:hover:bg-transparent lg:border-0 lg:hover:text-[#5F6F52] 
+                              lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 p-3">الرئيسية</a>
                     </li>
                 </ul>
             </div>
@@ -89,8 +119,9 @@
 
 
 
+
     <!-- About Course Start -->
-    <div class="container mx-auto px-4 text-right" dir="rtl" data-aos="zoom-in">
+    <div id="chapter" class="container mx-auto px-4 text-right" dir="rtl" data-aos="zoom-in">
         <!-- الغلاف الرئيسي -->
         <div
         class="flex flex-1 w-full flex-col items-center justify-center text-center px-6 sm:px-12 py-16 sm:py-20 
@@ -132,7 +163,7 @@
       
         
         <!-- تفاصيل الدورة -->
-        <section class="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-md mt-8" data-aos="zoom-in">
+        <section id="about" class="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-md mt-8" data-aos="zoom-in">
             <h2 class="text-2xl font-bold text-center text-[#5F6F52] mb-4">نبذة عن محتوى الدورة</h2>
             <p class="text-lg text-gray-700 text-center mb-6">
                 في 9 ساعات تدريبية فقط، ستتعلم كيفية إعداد بحث أكاديمي متكامل، من اختيار الموضوع إلى النشر، مع تطبيقات عملية وأمثلة حقيقية.
@@ -174,14 +205,15 @@
         </section>
     
 
-
+        <br>
+        <br>
     <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 items-center">
         <!-- الصورة -->
         <div class="flex justify-center" data-aos="fade-left">
             <img src="./Hero3.png" alt="صورة توضيحية" class="w-full max-w-md rounded-lg shadow-md">
         </div>
         <!-- الفئة المستهدفة -->
-        <section class="p-6 bg-gray-200 rounded-lg shadow-md" data-aos="fade-right">
+        <section class="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-right">
             <h2 class="text-2xl font-bold text-center text-[#5F6F52] mb-4">لمن هذه الدورة؟</h2>
             <p class="text-lg text-gray-700 text-center mb-6">
                 هذه الدورة مناسبة لكل طالب، باحث، أو مهتم بالكتابة الأكاديمية والبحث العلمي، مهما كان تخصصه أو خلفيته العلمية.
@@ -208,7 +240,331 @@
     </div>
     
     <!-- About Course End -->
+    <br>
+    <br>
 
+<!-- Gift Start -->
+<section id="gift" class="max-w-5xl mx-auto px-4 py-12" data-aos="fade-up">
+    <!-- عنوان -->
+    <h2 class="text-3xl font-bold text-center text-[#5F6F52] mb-6">
+        الهدايا الحصرية للمسجلين في الحجز المسبق
+    </h2>
+    <p class="text-lg text-center text-gray-700 mb-10">
+        عند التسجيل الآن، ستحصل على 3 هدايا مجانية قيّمة تساعدك في رحلتك الأكاديمية:
+    </p>
+
+    <!-- الكروت -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- الكتيب الأول -->
+        <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 group cursor-pointer
+                    hover:bg-[#5F6F52] hover:text-white transition duration-300"
+            data-aos="fade-up" data-aos-delay="100">
+            <div class="text-4xl text-blue-500 text-center mb-4">📘</div>
+            <h3 class="text-xl font-semibold text-[#5F6F52] text-center mb-2 group-hover:text-white transition ">
+                القاموس الشامل لأكثر 100 مصطلح أكاديمي
+            </h3>
+            <p class="text-gray-700 text-sm text-center group-hover:text-white transition ">
+                أداة لا غنى عنها لكل باحث أكاديمي، تحتوي على أهم المصطلحات الأكاديمية بين العربية والإنجليزية.
+            </p>
+        </div>
+
+        <!-- الكتيب الثاني -->
+        <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 group cursor-pointer
+                    hover:bg-[#5F6F52] hover:text-white transition duration-300"
+            data-aos="fade-up" data-aos-delay="200">
+            <div class="text-4xl text-blue-500 text-center mb-4">📘</div>
+            <h3 class="text-xl font-semibold text-[#5F6F52] text-center mb-2 group-hover:text-white transition ">
+                أهم 100 سؤال وجواب في مناقشات الماجستير والدكتوراه
+            </h3>
+            <p class="text-gray-700 text-sm text-center group-hover:text-white transition ">
+                دليل شامل لأكثر الأسئلة شيوعًا التي قد تواجهها خلال المناقشات، مع إجابات نموذجية.
+            </p>
+        </div>
+
+        <!-- الكتيب الثالث -->
+        <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 group cursor-pointer
+                    hover:bg-[#5F6F52] hover:text-white transition duration-300"
+            data-aos="fade-up" data-aos-delay="300">
+            <div class="text-4xl text-blue-500 text-center mb-4">📘</div>
+            <h3 class="text-xl font-semibold text-[#5F6F52] text-center mb-2 group-hover:text-white transition ">
+                دليل أشهر الخرافات حول البحث العلمي
+            </h3>
+            <p class="text-gray-700 text-sm text-center group-hover:text-white transition ">
+                يكشف الحقيقة وراء المعتقدات الخاطئة في البحث العلمي ويوفر استراتيجيات عملية لتجاوزها.
+            </p>
+        </div>
+    </div>
+
+    <!-- تفاصيل السعر والحجز -->
+    <div class="mt-12 text-center" data-aos="fade-up" data-aos-delay="400">
+        <p class="text-lg font-semibold text-gray-700">🗓️ الإطلاق الرسمي: <span class="text-[#5F6F52] font-bold">30/3/2025</span></p>
+        <p class="text-lg font-semibold text-gray-700">💰 السعر بعد الإطلاق: <span class="text-red-500 font-bold">69 دينار</span></p>
+        <p class="text-lg font-semibold text-gray-700">🔥 السعر الآن (للحجز المسبق فقط): <span class="text-green-500 font-bold">39 دينار</span></p>
+
+        <button class="mt-6 bg-[#5F6F52] text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
+           <a href="#payment"> احجز الآن واستفد من العرض </a>
+        </button>
+    </div>
+
+    <!-- ضمان استرداد الأموال -->
+    <p class="text-center text-gray-600 text-sm mt-6" data-aos="fade-up" data-aos-delay="500">
+        إذا لم تحقق الدورة الفائدة المرجوة، يمكنك طلب استرداد أموالك بالكامل، بدون أي مخاطرة.
+    </p>
+</section>
+<!-- Gift End -->
+
+<!-- Payment Start  -->
+
+<section id="payment" class="max-w-4xl mx-auto px-4 py-12" data-aos="fade-up">
+    <!-- العنوان -->
+    <h2 class="text-3xl font-bold text-center text-[#5F6F52] mb-6">
+        طرق الدفع لحجز مقعدك في الدورة
+    </h2>
+    <p class="text-lg text-center text-gray-700 mb-10">
+        لحجز مقعدك في دورة "دليلك في الكتابة الأكاديمية ومناهج البحث العلمي" والاستفادة من السعر المخفض والهدايا المجانية، يمكنك الدفع من خلال إحدى الوسائل التالية:
+    </p>
+
+    <!-- بطاقات الدفع -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- كليك البنك الأهلي -->
+        <div dir="rtl" class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:bg-[#5F6F52] hover:text-white transition duration-300">
+            <div class="text-4xl text-blue-500 text-center mb-4">🏦</div>
+            <h3 class="text-xl font-semibold text-center mb-2">كليك البنك الأهلي</h3>
+            <p class="text-center"><span class="font-bold">الاسم المستعار:</span> JAD2024</p>
+            <p class="text-center"><span class="font-bold">الاسم:</span> مجدي موفق سليم بشاره</p>
+        </div>
+
+        <!-- التحويل البنكي -->
+        <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:bg-[#5F6F52] hover:text-white transition duration-300">
+            <div class="text-4xl text-green-500 text-center mb-4">💳</div>
+            <h3 class="text-xl font-semibold text-center mb-2">التحويل البنكي (البنك الأهلي الأردني)</h3>
+            <p class="text-center"><span class="font-bold">رقم الحساب:</span> 1005492072</p>
+            <p class="text-center"><span class="font-bold">الاسم:</span> مجدي موفق سليم بشاره</p>
+        </div>
+
+        <!-- زين كاش -->
+        <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:bg-[#5F6F52] hover:text-white transition duration-300">
+            <div class="text-4xl text-yellow-500 text-center mb-4">📲</div>
+            <h3 class="text-xl font-semibold text-center mb-2">الدفع عبر زين كاش</h3>
+            <p class="text-center"><span class="font-bold">الرقم:</span> 0798438307</p>
+            <p class="text-center"><span class="font-bold">الاسم:</span> مجدي موفق سليم بشاره</p>
+        </div>
+
+        <!-- أورانج موني -->
+        <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:bg-[#5F6F52] hover:text-white transition duration-300">
+            <div class="text-4xl text-orange-500 text-center mb-4">💰</div>
+            <h3 class="text-xl font-semibold text-center mb-2">الدفع عبر أورانج موني</h3>
+            <p class="text-center"><span class="font-bold">الرقم:</span> 0790295380</p>
+            <p class="text-center"><span class="font-bold">الاسم:</span> مجدي موفق سليم بشاره</p>
+        </div>
+    </div>
+
+    <!-- ماذا بعد الدفع؟ -->
+    <div class="mt-12 bg-gray-100 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-bold text-[#5F6F52] mb-4">📌 ماذا بعد الدفع؟</h3>
+        <p class="text-gray-700 mb-2">📲 <span class="font-bold">قم بإرسال إيصال الدفع مع اسمك ورقم الواتساب إلى:</span></p>
+        <p class="text-lg font-semibold text-[#5F6F52]">00962780092288 (واتساب الحجز)</p>
+        <p class="text-gray-700 mt-4">✅ ستتلقى تأكيد تسجيلك في الدورة خلال 24 ساعة.</p>
+        <p class="text-gray-700">📚 بمجرد بدء الدورة، ستحصل على وصول مدى الحياة إلى جميع الدروس والمواد.</p>
+    </div>
+
+    <p dir="rtl" class="text-center text-red-500 text-lg font-bold mt-6">📍 المقاعد محدودة لأول 100 مشترك فقط – احجز الآن قبل انتهاء العرض!</p>
+</section>
+
+<!-- Payment End -->
+
+
+<!-- Testimonials Start  -->
+<div id="testimonials" class="h-[70vh] w-full flex justify-center items-center bg-gray-100 dark:bg-gray-700 px-4" dir="rtl">
+    <section class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 max-w-3xl w-full">
+        <h2 class="text-2xl font-bold text-center text-[#5F6F52] mb-6">
+            آراء من طلاب ومتدربين سابقين بالدورة
+        </h2>
+
+        <!-- الكاروسيل -->
+        <div class="relative">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- الرأي الأول -->
+                    <div class="swiper-slide text-center p-6">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                            fill="currentColor"></path>
+                    </svg>
+                        <blockquote>
+                            <p class="text-lg font-medium text-gray-900 dark:text-white">
+                                "أنا قبل الدورة كنت أشوف الكتابة الأكاديمية إشي ثقيل ومعقّد، بس بعد ما حضرتها حسّيت كل الأمور صارت واضحة وسلسة. هاي الدورة بتنقذك حرفيًا!"
+                            </p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-4 space-x-3" dir="ltr">
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">براءة الخطيب</div>
+                                <div class="pl-3 text-sm text-gray-500 dark:text-gray-400">طالبة دكتوراة في قبرص</div>
+                            </div>
+                        </figcaption>
+                    </div>
+
+                    <!-- الرأي الثاني -->
+                    <div class="swiper-slide text-center p-6">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                            fill="currentColor"></path>
+                    </svg>
+                        <blockquote>
+                            <p class="text-lg font-medium text-gray-900 dark:text-white">
+                                "أنا حضرت الدورة وكان تركيزي على جزئية نشر البحث العلمي، وفعلاً لقيت معلومات ما عمري سمعتها بدورات ثانية!"
+                            </p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-4 space-x-3" dir="ltr">
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">د. علي سمير</div>
+                                <div class="pl-3 text-sm text-gray-500 dark:text-gray-400">دكتوراة في ماليزيا</div>
+                            </div>
+                        </figcaption>
+                    </div>
+
+                    <!-- الرأي الثالث -->
+                    <div class="swiper-slide text-center p-6">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                            fill="currentColor"></path>
+                    </svg>
+                        <blockquote>
+                            <p class="text-lg font-medium text-gray-900 dark:text-white">
+                                "حضرت الدورة وبكل أمانة حسّيت حالي أول مرة بفهم البحث العلمي صح. الأسلوب كان بسيط ومرتب!"
+                            </p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-4 space-x-3" dir="ltr">
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">م. عبدالله طعاني</div>
+                                <div class="pl-3 text-sm text-gray-500 dark:text-gray-400">طالب ماجستير من الأردن</div>
+                            </div>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار التنقل المخصصة -->
+            <button class="swiper-custom-prev">
+
+                <i class="fas fa-chevron-left"></i>
+
+            </button>
+            <button class="swiper-custom-next">
+
+                <i class="fas fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+    </section>
+</div>
+<!-- Testimonials  |End -->
+
+
+<!-- Contact  -->
+
+<section class="bg-[#5F6F52] text-white" id="contact" dir="rtl">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div class="mb-4">
+            <div class="mb-6 max-w-3xl text-center md:mx-auto md:mb-12">
+                <p class="text-base font-semibold uppercase tracking-wide text-white">
+                    تواصل معنا
+                </p>
+                <h2 class="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl">
+                    تواصل معنا الآن
+                </h2>
+                <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-200">
+                    نحن هنا للإجابة على استفساراتك ومساعدتك في أي وقت.
+                </p>
+            </div>
+        </div>
+        <div class="flex items-stretch justify-center">
+            <div class="grid md:grid-cols-2">
+                <div class="h-full pl-6">
+                    <p class="mt-3 mb-12 text-lg text-gray-200">
+                        إذا كنت بحاجة إلى أي استفسارات أو مساعدة، لا تتردد في التواصل معنا. نحن هنا لمساعدتك.
+                    </p>
+                    <ul class="mb-6 md:mb-0">
+                        <li class="flex">
+                            <div class="flex h-10 w-10 items-center justify-center rounded bg-white text-[#5F6F52]">
+                                <i class="fas fa-map-marker-alt text-lg"></i>
+                            </div>
+                            <div class="mr-4 mb-4">
+                                <h3 class="mb-2 text-lg font-medium leading-6 text-white">عنواننا</h3>
+                                <p class="text-gray-200">شارع 123، المنطقة التجارية</p>
+                                <p class="text-gray-200">القاهرة، مصر</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex h-10 w-10 items-center justify-center rounded bg-white text-[#5F6F52]">
+                                <i class="fas fa-phone text-lg"></i>
+                            </div>
+                            <div class="mr-4 mb-4">
+                                <h3 class="mb-2 text-lg font-medium leading-6 text-white">اتصل بنا</h3>
+                                <p class="text-gray-200">الهاتف: +20 123 456 7890</p>
+                                <p class="text-gray-200">البريد: contact@example.com</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex h-10 w-10 items-center justify-center rounded bg-white text-[#5F6F52]">
+                                <i class="fas fa-clock text-lg"></i>
+                            </div>
+                            <div class="mr-4 mb-4">
+                                <h3 class="mb-2 text-lg font-medium leading-6 text-white">ساعات العمل</h3>
+                                <p class="text-gray-200">الإثنين - الجمعة: 08:00 - 17:00</p>
+                                <p class="text-gray-200">السبت والأحد: 08:00 - 12:00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
+                    <h2 class="mb-4 text-2xl font-bold text-white">هل أنت مستعد للتواصل؟</h2>
+                    <form action="https://fabform.io/f/xxxxx" method="post">
+                        <div class="mb-6">
+                            <div class="mx-0 mb-1 sm:mb-4">
+                                <div class="mx-0 mb-1 sm:mb-4">
+                                    <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                    <input type="text" id="name" autocomplete="given-name" placeholder="الاسم"
+                                        class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md bg-gray-200 text-gray-900 sm:mb-0"
+                                        name="name">
+                                </div>
+                                <div class="mx-0 mb-1 sm:mb-4">
+                                    <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                    <input type="email" id="email" autocomplete="email" placeholder="البريد الإلكتروني"
+                                        class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md bg-gray-200 text-gray-900 sm:mb-0"
+                                        name="email">
+                                </div>
+                            </div>
+                            <div class="mx-0 mb-1 sm:mb-4">
+                                <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                <textarea id="textarea" name="textarea" cols="30" rows="5"
+                                    placeholder="اكتب رسالتك هنا..."
+                                    class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md bg-gray-200 text-gray-900 sm:mb-0"></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="w-full bg-white text-[#5F6F52] px-6 py-3 font-xl rounded-md sm:mb-0 hover:bg-gray-300 transition">
+                                إرسال الرسالة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact  -->
 
 
 
@@ -221,6 +577,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>    
 
         const NavLink = document.querySelectorAll('nav ul li')
@@ -232,8 +590,27 @@
                 el.classList.add('active')
             })
         })
-  AOS.init();
-
+        AOS.init({
+    duration: 800,  // مدة الحركة بالمللي ثانية
+    once: true,      // الحركة تظهر مرة واحدة فقط
+  });
+  var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-custom-next",
+            prevEl: ".swiper-custom-prev",
+        },
+    });
 </script>
+
 </body>
 </html>
